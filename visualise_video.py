@@ -2,10 +2,10 @@ import cv2
 from ultralytics import YOLO
 
 # Load the YOLOv8 model
-model = YOLO('yolov8n.pt')
+model = YOLO('/content/drive/My Drive/AI/el')
 
 # Open the video file
-video_path = "path/to/your/video/file.mp4"
+video_path = '/content/drive/My Drive/AI/el/a/norm_firefox_public_update.mp4'
 cap = cv2.VideoCapture(video_path)
 
 # Initialize frame count
