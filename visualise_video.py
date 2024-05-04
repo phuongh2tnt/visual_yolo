@@ -2,7 +2,7 @@ import cv2
 from ultralytics import YOLO
 
 # Load the YOLOv8 model
-model = YOLO('/content/drive/My Drive/AI/el')
+model = YOLO('/content/drive/My Drive/AI/el/best.pt')
 
 # Open the video file
 video_path = '/content/drive/My Drive/AI/el/a/norm_firefox_public_update.mp4'
