@@ -39,7 +39,7 @@ def draw_box(draw, label, color, left, top, right, bottom):
     :param right: right coordinate (i.e.x2)
     :param bottom: bottom coordinate (i.e.y2)
     """
-    font = ImageFont.truetype('FiraMono-Medium.otf', size=25)
+    font = ImageFont.truetype(cmd_args.input + os.sep + 'FiraMono-Medium.otf', size=25)
     label_size = draw.textlength(label, font)
 
     # Adjust the bounding box if it is outside the input image (just for a better visualization)
