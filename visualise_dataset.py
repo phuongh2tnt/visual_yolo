@@ -169,7 +169,7 @@ if __name__ == '__main__':
             combined_im.save(out_folder + os.sep + os.path.basename(img_file))
 
     else:
-        class_names = get_classes(cmd_args.input + os.sep + 'classes.txt') #file class
+        class_names = get_classes('classes.txt') #file class
         for txt_file in tqdm(txt_files):
             img_file = img_folder + os.sep + os.path.basename(txt_file).replace('txt', 'jpg')
             img = Image.open(img_file)
