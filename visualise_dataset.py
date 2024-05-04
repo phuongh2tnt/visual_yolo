@@ -138,7 +138,8 @@ if __name__ == '__main__':
 
     txt_folder = cmd_args.input + os.sep + 'labels/train'
     img_folder = cmd_args.input + os.sep + 'images/train'
-    out_folder = cmd_args.input + os.sep + '/content/drive/My Drive/AI/el' #'visualization'
+   #out_folder = cmd_args.input + os.sep + '/content/drive/My Drive/AI/el' #'visualization'
+    out_folder = '/content/drive/My Drive/AI/el'
 
     if not os.path.exists(out_folder):
         os.mkdir(out_folder)
