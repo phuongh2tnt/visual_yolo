@@ -171,7 +171,7 @@ if __name__ == '__main__':
     else:
         class_names = get_classes(cmd_args.input + os.sep + 'classes.txt') #file class
         for txt_file in tqdm(txt_files):
-            img_file = img_folder + os.sep + os.path.basename(txt_file).replace('txt', 'jpg')
+            img_file = img_folder + os.sep + os.path.basename(txt_file).replace('txt', 'png') # thay jpg bang png
             img = Image.open(img_file)
             img = img.convert('RGB')
             W, H = img.size
