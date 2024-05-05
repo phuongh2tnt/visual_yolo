@@ -24,7 +24,7 @@ while cap.isOpened():
         annotated_frame = results[0].plot()
 
         # Display the annotated frame
-        cv2.imshow("YOLOv8 Inference", annotated_frame)
+        #cv2.imshow("YOLOv8 Inference", annotated_frame)
 
         # Save the frame
         #cv2.imwrite("frame_%d.jpg" % frame_count, annotated_frame)
@@ -32,7 +32,7 @@ while cap.isOpened():
         #-----Luu
         save_dir = '/content/drive/My Drive/AI/el/a'
         cv2.imwrite(os.path.join(save_dir, "frame_%d.jpg" % frame_count), annotated_frame)
-        print("Frame %d saved successfully." % frame_count)
+        #print("Frame %d saved successfully." % frame_count)
         # Increment frame count
         frame_count += 1
 
