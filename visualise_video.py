@@ -6,7 +6,7 @@ from ultralytics import YOLO
 model = YOLO('/content/drive/My Drive/AI/el/best.pt')
 
 # Open the video file
-video_path = '/content/drive/My Drive/AI/el/a/norm_firefox_public_update.mp4'
+video_path = '/content/drive/My Drive/AI/el/videotestcoMinh/coMinh7.mp4'
 cap = cv2.VideoCapture(video_path)
 
 # Initialize frame count
@@ -31,7 +31,7 @@ while cap.isOpened():
         #cv2.imwrite("frame_%d.jpg" % frame_count, annotated_frame)
        # print("Frame %d saved successfully." % frame_count)
         #-----Luu
-        save_dir = '/content/drive/My Drive/AI/el/a'
+        save_dir = '/content/drive/My Drive/AI/el/coMinh'
         cv2.imwrite(os.path.join(save_dir, "frame_%d.jpg" % frame_count), annotated_frame)
         #print("Frame %d saved successfully." % frame_count)
         # Increment frame count
