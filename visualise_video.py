@@ -6,7 +6,7 @@ from ultralytics import YOLO
 model = YOLO('/content/drive/My Drive/AI/el/best.pt')
 
 # Open the video file
-video_path = '/content/drive/My Drive/AI/el/videotestcoMinh/coMinh7.mp4'
+video_path = '/content/drive/My Drive/AI/el/videotestcoMinh/CoMinh7.mp4'
 cap = cv2.VideoCapture(video_path)
 
 # Initialize frame count
